@@ -800,15 +800,6 @@ const TriangleHRWebsite = () => {
                 </div>
 
                 <div className="space-y-6">
-                  <div className="flex items-center space-x-6 group cursor-pointer glass-panel-dark p-4 rounded-2xl w-max">
-                    <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center text-accent-400 group-hover:bg-accent-500 group-hover:text-white transition-colors">
-                      <Phone className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <h4 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-1">Phone</h4>
-                      <p className="text-lg font-display font-medium">7338626988</p>
-                    </div>
-                  </div>
 
                   <div className="flex items-center space-x-6 group cursor-pointer glass-panel-dark p-4 rounded-2xl w-max">
                     <div className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center text-accent-400 group-hover:bg-accent-500 group-hover:text-white transition-colors">
