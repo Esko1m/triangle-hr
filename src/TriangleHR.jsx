@@ -84,7 +84,7 @@ const TriangleHRWebsite = () => {
       title: 'Industry Institute Partnership Cell',
       icon: <Building2 className="w-6 h-6" />,
       color: '#F97316',
-      description: 'Bridging academia and industry expectations',
+      description: 'Strengthening the bond between academia and industry',
       details: [
         'Corporate collaboration programs',
         'Industry expert sessions',
@@ -280,18 +280,18 @@ const TriangleHRWebsite = () => {
                   <span>Connecting Talent with Opportunity</span>
                 </div>
 
-                <h1 className="text-5xl md:text-6xl lg:text-[4.5rem] font-display font-extrabold text-slate-900 leading-[1.05] tracking-tight">
-                  Bridging Academic <br className="hidden md:block" /> Learning and <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-600 to-accent-600">Industry.</span>
+                <h1 className="text-4xl md:text-6xl lg:text-[4.5rem] font-display font-extrabold text-slate-900 leading-[1.1] md:leading-[1.05] tracking-tight text-center lg:text-left">
+                  Empowering Talent, <br className="hidden md:block" /> Strengthening Organizations, <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-600 to-accent-600">Building the Future.</span>
                 </h1>
 
-                <p className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-xl font-light">
+                <p className="text-base md:text-xl text-slate-600 leading-relaxed max-w-xl mx-auto lg:mx-0 font-light text-center lg:text-left">
                   Delivering value-driven management services, specializing in career-connect training programs and strategic employment opportunities since 2011.
                 </p>
 
-                <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
+                <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
                   <button
                     onClick={() => scrollToSection('contact')}
-                    className="relative overflow-hidden px-8 py-4 bg-slate-900 text-white rounded-xl text-lg font-bold hover:bg-slate-800 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)] transform hover:-translate-y-1 flex items-center justify-center group"
+                    className="relative overflow-hidden px-6 py-4 bg-slate-900 text-white rounded-xl text-base md:text-lg font-bold hover:bg-slate-800 transition-all duration-300 shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)] transform hover:-translate-y-1 flex items-center justify-center group"
                   >
                     <span className="relative z-10 flex items-center">
                       Start Your Journey
@@ -302,21 +302,21 @@ const TriangleHRWebsite = () => {
                   </button>
                   <button
                     onClick={() => scrollToSection('services')}
-                    className="px-8 py-4 bg-white text-slate-700 rounded-xl text-base font-semibold border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all duration-300 flex items-center justify-center shadow-sm"
+                    className="px-6 py-4 bg-white text-slate-700 rounded-xl text-sm md:text-base font-semibold border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all duration-300 flex items-center justify-center shadow-sm"
                   >
                     Explore Services
                   </button>
                 </div>
 
-                <div className="grid grid-cols-3 gap-6 pt-8 border-t border-slate-200/60 w-max pr-8">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 border-t border-slate-200/60 w-full lg:w-max pr-0 lg:pr-8">
                   {[
                     { value: '13+', label: 'Years Experience' },
                     { value: '50+', label: 'Partner Institutions' },
                     { value: '10K+', label: 'Students Trained' },
                   ].map((stat, idx) => (
-                    <div key={idx} className="space-y-1">
-                      <p className="text-3xl font-display font-bold text-slate-900">{stat.value}</p>
-                      <p className="text-[0.8rem] text-slate-500 font-medium uppercase tracking-wider">{stat.label}</p>
+                    <div key={idx} className="space-y-1 text-center lg:text-left">
+                      <p className="text-2xl md:text-3xl font-display font-bold text-slate-900">{stat.value}</p>
+                      <p className="text-[0.7rem] md:text-[0.8rem] text-slate-500 font-medium uppercase tracking-wider">{stat.label}</p>
                     </div>
                   ))}
                 </div>
@@ -417,15 +417,34 @@ const TriangleHRWebsite = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
-                className="md:col-span-2 row-span-1 border border-slate-200 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-gradient-to-br from-white via-white to-accent-50 rounded-[2rem] p-8 md:p-10 flex flex-col justify-between overflow-hidden relative group magic-border hover:-translate-y-2 hover:shadow-glow-primary transition-all duration-300"
+                className="md:col-span-2 row-span-1 border border-slate-200 shadow-[0_8px_30px_rgb(0,0,0,0.04)] bg-gradient-to-br from-white via-white to-accent-50 rounded-[2rem] p-8 md:p-10 overflow-hidden relative group magic-border hover:-translate-y-1 transition-all duration-300"
               >
                 <div className="absolute right-0 top-0 w-64 h-64 bg-accent-500/10 blur-[80px] rounded-full group-hover:bg-accent-400/20 transition-colors duration-700" />
-                <div className="text-accent-500 mb-4 relative z-10 bg-accent-100/50 p-4 rounded-2xl w-max"><Target className="w-8 h-8" /></div>
-                <div className="relative z-10 max-w-lg">
-                  <h3 className="text-2xl font-display font-bold mb-3 tracking-tight text-slate-900">Our Mission</h3>
-                  <p className="text-slate-500 font-light text-lg">
-                    Delivering quality, value-based training that enhances employability while improving individual performance and overall productivity.
-                  </p>
+
+                <div className="grid sm:grid-cols-3 gap-8 relative z-10">
+                  <div className="space-y-4">
+                    <div className="text-accent-500 bg-accent-50 p-3 rounded-xl w-max"><Sparkles className="w-6 h-6" /></div>
+                    <h3 className="text-xl font-display font-bold tracking-tight text-slate-900">Vision</h3>
+                    <p className="text-slate-500 text-sm font-light leading-relaxed">
+                      To be a trusted partner in shaping confident, skilled, and future-ready professionals who thrive in a changing world.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <div className="text-emerald-500 bg-emerald-50 p-3 rounded-xl w-max"><Target className="w-6 h-6" /></div>
+                    <h3 className="text-xl font-display font-bold tracking-tight text-slate-900">Mission</h3>
+                    <p className="text-slate-500 text-sm font-light leading-relaxed">
+                      To connect learning with real-world success by helping individuals grow with confidence and enabling organizations to build strong, future-ready teams.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <div className="text-blue-500 bg-blue-50 p-3 rounded-xl w-max"><ChevronRight className="w-6 h-6" /></div>
+                    <h3 className="text-xl font-display font-bold tracking-tight text-slate-900">Objective</h3>
+                    <p className="text-slate-500 text-sm font-light leading-relaxed">
+                      Connecting learning with real-world impact by developing capable people, strong organizations, and future-ready careers.
+                    </p>
+                  </div>
                 </div>
               </motion.div>
 
@@ -442,7 +461,7 @@ const TriangleHRWebsite = () => {
                 <div className="relative z-10">
                   <h3 className="text-xl font-display font-bold text-slate-900 mb-2">Our Approach</h3>
                   <p className="text-slate-600 text-sm">
-                    Bridging the gap between academic learning and industry expectations.
+                    Strengthening organizations by building the future of talent today.
                   </p>
                 </div>
               </motion.div>
@@ -537,75 +556,74 @@ const TriangleHRWebsite = () => {
               </div>
 
               <div className="max-w-6xl mx-auto">
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid md:grid-cols-2 gap-8">
                   {trainingPillars.map((pillar, index) => (
                     <motion.div
-                      initial={{ opacity: 0, scale: 0.95 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
+                      initial={{ opacity: 0, y: 30 }}
+                      whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
-                      transition={{ delay: index * 0.1 }}
+                      transition={{ delay: index * 0.1, duration: 0.6 }}
                       key={index}
                       onClick={() => setSelectedPillar(selectedPillar === index ? null : index)}
-                      className={`relative glass-panel bg-white/80 rounded-[2rem] cursor-pointer transition-all duration-500 overflow-hidden border ${selectedPillar === index
-                        ? 'shadow-2xl scale-105 border-transparent ring-2 ring-slate-900 z-20'
-                        : 'border-slate-200 hover:shadow-xl hover:-translate-y-1 hover:border-slate-300 z-10'
+                      className={`relative group cursor-pointer transition-all duration-500 rounded-[2rem] overflow-hidden border border-white/60 ${selectedPillar === index
+                        ? 'bg-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] ring-1 ring-accent-500/20 z-20'
+                        : 'glass-panel bg-white/40 hover:bg-white/80 shadow-[0_8px_30px_rgba(0,0,0,0.04)] hover:shadow-2xl z-10'
                         }`}
                     >
-                      {/* Animated gradient top border */}
-                      <div
-                        className="absolute top-0 left-0 w-full h-1.5 transition-opacity duration-300"
-                        style={{ backgroundColor: pillar.color, opacity: selectedPillar === index ? 1 : 0.4 }}
-                      />
-
-                      <div className="p-8 pb-10 flex flex-col h-full">
-                        <div className="flex justify-between items-start mb-6">
+                      <div className="p-6 md:p-8 flex items-center space-x-6">
+                        {/* Premium Icon Container like Image 2 */}
+                        <div className="relative shrink-0">
                           <div
-                            className="w-14 h-14 rounded-[1.2rem] flex items-center justify-center text-2xl shadow-sm border border-slate-100"
-                            style={{ backgroundColor: `${pillar.color}15`, color: pillar.color }}
+                            className="w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center relative overflow-hidden shadow-lg border-2 border-white/80 group-hover:scale-110 transition-transform duration-500"
+                            style={{ background: `linear-gradient(135deg, ${pillar.color}20, ${pillar.color}40)` }}
                           >
-                            {pillar.icon}
+                            <div className="absolute inset-0 bg-white/10 backdrop-blur-sm" />
+                            <div className="relative" style={{ color: pillar.color }}>
+                              {React.cloneElement(pillar.icon, { className: 'w-8 h-8 md:w-10 md:h-10' })}
+                            </div>
                           </div>
-                          <div className="text-slate-300 font-display font-bold text-5xl tracking-tighter">
-                            0{index + 1}
-                          </div>
+                          {/* Inner glow effect */}
+                          <div className="absolute inset-0 rounded-full shadow-inner pointer-events-none" />
                         </div>
 
-                        <h4 className="font-display font-bold text-xl text-slate-900 mb-3 tracking-tight">
-                          {pillar.title}
-                        </h4>
-                        <p className="text-slate-500 text-sm leading-relaxed mb-6">
-                          {pillar.description}
-                        </p>
+                        {/* Text Content */}
+                        <div className="flex-grow min-w-0">
+                          <h4 className="font-display font-extrabold text-xl md:text-2xl text-slate-800 mb-2 tracking-tight group-hover:text-accent-700 transition-colors leading-tight">
+                            {pillar.title}
+                          </h4>
+                          <p className="text-slate-500 text-sm md:text-base font-medium leading-relaxed line-clamp-2 group-hover:line-clamp-none transition-all duration-500">
+                            {pillar.description}
+                          </p>
+                        </div>
 
-                        <AnimatePresence>
-                          {selectedPillar === index && (
-                            <motion.div
-                              initial={{ opacity: 0, height: 0 }}
-                              animate={{ opacity: 1, height: 'auto' }}
-                              exit={{ opacity: 0, height: 0 }}
-                              className="pt-4 border-t border-slate-100 overflow-hidden"
-                            >
-                              <ul className="space-y-3 mb-6">
-                                {pillar.details.map((detail, idx) => (
-                                  <li key={idx} className="flex items-start text-sm">
-                                    <span className="w-1.5 h-1.5 rounded-full mt-2 mr-3 flex-shrink-0" style={{ backgroundColor: pillar.color }} />
-                                    <span className="text-slate-600 font-medium">{detail}</span>
-                                  </li>
-                                ))}
-                              </ul>
-                            </motion.div>
-                          )}
-                        </AnimatePresence>
-
-                        <div className="mt-auto pt-4 flex items-center justify-between pointer-events-none">
-                          <span className="text-xs font-bold uppercase tracking-widest text-slate-400">
-                            {selectedPillar === index ? 'Collapse' : 'Expand'}
-                          </span>
-                          <div className={`w-8 h-8 rounded-full flex items-center justify-center border transition-all duration-300 ${selectedPillar === index ? 'bg-slate-900 border-slate-900 text-white rotate-90' : 'border-slate-200 text-slate-400 bg-white'}`}>
-                            <ChevronRight className="w-4 h-4" />
-                          </div>
+                        {/* Minimalist Arrow like Image 2 */}
+                        <div className={`shrink-0 w-10 h-10 rounded-full flex items-center justify-center border border-slate-100 transition-all duration-300 ${selectedPillar === index
+                          ? 'bg-accent-500 border-accent-500 text-white rotate-90'
+                          : 'bg-white shadow-sm text-slate-400 group-hover:text-accent-500 group-hover:border-accent-200'
+                          }`}>
+                          <ChevronRight className="w-5 h-5" />
                         </div>
                       </div>
+
+                      <AnimatePresence>
+                        {selectedPillar === index && (
+                          <motion.div
+                            initial={{ opacity: 0, height: 0 }}
+                            animate={{ opacity: 1, height: 'auto' }}
+                            exit={{ opacity: 0, height: 0 }}
+                            className="px-8 pb-8 pt-2 border-t border-slate-50 overflow-hidden"
+                          >
+                            <div className="grid sm:grid-cols-2 gap-4 mt-4">
+                              {pillar.details.map((detail, idx) => (
+                                <div key={idx} className="flex items-center space-x-3 bg-slate-50/50 p-3 rounded-xl border border-slate-100/50">
+                                  <div className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: pillar.color }} />
+                                  <span className="text-slate-600 text-sm font-semibold">{detail}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
                     </motion.div>
                   ))}
                 </div>

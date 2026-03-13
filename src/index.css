@@ -30,8 +30,20 @@
     @apply bg-slate-900/80 backdrop-blur-xl border border-slate-700/50 shadow-glass;
   }
 
+  .glass-card {
+    @apply bg-white/40 backdrop-blur-xl border border-white/60 shadow-premium;
+  }
+
+  .shadow-premium {
+    box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.08), 0 10px 30px -10px rgba(0, 0, 0, 0.04);
+  }
+
+  .shadow-glow-accent {
+    box-shadow: 0 0 30px rgba(16, 185, 129, 0.2), 0 0 60px rgba(16, 185, 129, 0.1);
+  }
+
   .text-glow {
-    text-shadow: 0 0 20px rgba(0, 46, 213, 0.4);
+    text-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
   }
 
   .hide-scrollbar::-webkit-scrollbar {
