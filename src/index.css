@@ -135,24 +135,29 @@
   }
 
   .nav-link {
-    @apply text-sm font-semibold tracking-wider uppercase transition-all duration-300 relative;
+    @apply text-sm font-semibold tracking-wider uppercase transition-all duration-300 relative px-4 py-2 rounded-full;
   }
 
-  .nav-link::after {
+  .nav-link::before {
     content: '';
-    @apply absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300;
+    @apply absolute inset-0 bg-primary/10 opacity-0 scale-90 transition-all duration-300 rounded-full -z-10;
   }
 
   .nav-link:hover {
     @apply text-primary;
   }
 
-  .nav-link:hover::after {
-    @apply w-full;
+  .nav-link:hover::before,
+  .nav-link.active::before {
+    @apply opacity-100 scale-100;
+  }
+
+  .nav-link.active {
+    @apply text-primary bg-primary/10;
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 px-8 py-4 font-bold text-sm tracking-widest uppercase rounded-full transition-all duration-500 shadow-lg hover:shadow-primary/20 active:scale-95;
+    @apply inline-flex items-center justify-center gap-2 px-8 py-4 font-bold text-sm tracking-widest uppercase rounded-full transition-all duration-500 shadow-lg hover:shadow-primary/40 active:scale-95 border-b-2 border-primary/20;
     background: linear-gradient(135deg, hsl(var(--brand-blue)), hsl(var(--brand-blue-light)));
     color: hsl(var(--primary-foreground));
   }

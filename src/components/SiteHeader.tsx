@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import logo from '@/assets/logo.png';
+import { Link, useLocation } from 'react-router-dom';
+import logo from '../assets/logo.png';
 
 const navItems = [
   { name: 'Home', path: '/' },
@@ -16,6 +16,7 @@ const navItems = [
 const SiteHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,9 +30,7 @@ const SiteHeader = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
-        ? 'bg-white/80 dark:bg-black/80 backdrop-blur-md py-4 shadow-lg border-b border-border/50'
-        : 'bg-transparent py-6'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-white/90 dark:bg-black/90 backdrop-blur-xl border-b border-border/50 ${isScrolled ? 'py-3 shadow-lg' : 'py-5 shadow-sm'
         }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
@@ -43,16 +42,16 @@ const SiteHeader = () => {
             <img
               src={logo}
               alt="Triangle HR Solutions"
-              className={`h-20 w-auto transition-all duration-300 ${isScrolled ? 'scale-90' : 'scale-100'}`}
+              className={`h-24 w-auto transition-all duration-300 drop-shadow-sm ${isScrolled ? 'scale-90' : 'scale-100'}`}
             />
           </Link>
 
-          <nav className="hidden md:flex items-center gap-8 lg:gap-10">
+          <nav className="hidden md:flex items-center gap-2 lg:gap-4">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 to={item.path}
-                className={`nav-link ${isScrolled ? 'text-foreground' : 'text-foreground/90'}`}
+                className={`nav-link ${location.pathname === item.path ? 'active' : ''}`}
               >
                 {item.name}
               </Link>
@@ -82,14 +81,17 @@ const SiteHeader = () => {
         className={`fixed inset-x-0 top-[100%] transition-all duration-500 md:hidden overflow-hidden ${isMenuOpen ? 'max-h-screen opacity-100 visible' : 'max-h-0 opacity-0 invisible'
           }`}
       >
-        <div className="bg-white/95 dark:bg-black/95 backdrop-blur-xl border-t border-border shadow-2xl p-6">
-          <nav className="flex flex-col gap-2">
+        <div className="bg-white/98 dark:bg-black/98 backdrop-blur-2xl border-t border-border shadow-2xl p-6">
+          <nav className="flex flex-col gap-3">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 to={item.path}
                 onClick={closeMenu}
-                className="w-full text-left px-4 py-4 text-sm font-semibold text-foreground hover:bg-primary/10 hover:text-primary rounded-xl transition-all"
+                className={`w-full text-left px-5 py-4 text-sm font-semibold rounded-2xl transition-all ${location.pathname === item.path
+                    ? 'bg-primary/10 text-primary'
+                    : 'text-foreground hover:bg-primary/5 hover:text-primary'
+                  }`}
               >
                 {item.name}
               </Link>

@@ -49,15 +49,7 @@ const ContactSection = () => {
             </motion.div>
 
             <div className="space-y-10">
-              <div className="flex items-center gap-6 group">
-                <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary shadow-lg group-hover:scale-110 transition-transform">
-                  <Phone size={24} />
-                </div>
-                <div>
-                  <p className="text-sm font-black text-muted-foreground uppercase tracking-widest mb-1">Phone</p>
-                  <p className="text-xl font-bold text-foreground">7338626988</p>
-                </div>
-              </div>
+              
               
               <div className="flex items-center gap-6 group">
                 <div className="w-14 h-14 bg-accent/10 rounded-2xl flex items-center justify-center text-accent shadow-lg group-hover:scale-110 transition-transform">

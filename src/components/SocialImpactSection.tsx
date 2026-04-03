@@ -25,7 +25,7 @@ const SocialImpactSection = () => (
             Triangle HR Solutions actively supports inclusive professional development through collaborations with organizations dedicated to sustainable livelihood.
           </p>
           <p className="text-muted-foreground leading-relaxed mb-10">
-            We partner with organizations like **NAMANAM Centre for Sustainable Livelihood** to create meaningful opportunities and bridge the gap between skill development and professional success for underserved communities.
+            We partner with organizations like NAMANAM Centre for Sustainable Livelihood to create meaningful opportunities and bridge the gap between skill development and professional success for underserved communities.
           </p>
         </motion.div>
 

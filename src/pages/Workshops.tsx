@@ -124,9 +124,7 @@ const WorkshopsPage = () => {
       {/* Header */}
       <header className="bg-white/80 backdrop-blur-md border-b border-border/50 shadow-sm sticky top-0 z-40 py-4">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-3 group transition-transform duration-300 hover:scale-105">
-            <img src={logo} alt="Triangle HR Solutions" className="h-10 w-auto" />
-          </Link>
+          
           <Link
             to="/"
             className="flex items-center gap-2 text-sm font-semibold text-muted-foreground hover:text-primary transition-colors tracking-wide uppercase"
