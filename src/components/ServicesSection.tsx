@@ -1,57 +1,9 @@
 import { motion } from 'framer-motion';
-
-const services = [
-  {
-    number: '01',
-    title: 'Corporate Training & Capability Building',
-    image: 'https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&q=80&w=400&h=400',
-    description: 'We offer programs to help organizations build capable and high-performing teams through structured competency and behavioral frameworks.',
-    highlights: [
-      'Leadership & Managerial Effectiveness',
-      'Power Skills & Behavioral Competencies',
-      'Communication & Workplace Collaboration',
-      'Emotional Intelligence & Wellbeing',
-      'Mental Wellbeing & Workplace Resilience',
-    ],
-  },
-  {
-    number: '02',
-    title: 'Institutional Training & Employability Programs',
-    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=400&h=400',
-    description: 'Bridging the gap between campus learning and corporate expectations through structured readiness programs.',
-    highlights: [
-      'Campus-to-Corporate Programs',
-      'Employability Skill Development',
-      'Personality & Professional Development',
-      'Career Readiness Training',
-    ],
-  },
-  {
-    number: '03',
-    title: 'Industry–Academia Initiatives',
-    image: 'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&q=80&w=400&h=400',
-    description: 'Strengthening the connection between academic learning and industry expectations through collaborative programs.',
-    highlights: [
-      'Industry Visits & Exposure Programs',
-      'Faculty Development Programs',
-      'Internship Training Programs',
-      'Skill Workshops & Seminars',
-    ],
-  },
-  {
-    number: '04',
-    title: 'Individual Career Development',
-    image: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=400&h=400',
-    description: 'Helping individuals gain clarity, build leadership capabilities, and navigate their career growth effectively.',
-    highlights: [
-      'Career Guidance & Counseling',
-      'Leadership Coaching',
-      'Career Transition Support',
-    ],
-  },
-];
+import servicesContent from '../content/services.json';
 
 const ServicesSection = () => {
+  const { services } = servicesContent;
+
   return (
     <section id="services" className="section-padding bg-background relative overflow-hidden">
       <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -z-10 translate-x-1/2 -translate-y-1/2" />
@@ -64,11 +16,11 @@ const ServicesSection = () => {
           className="mb-16"
         >
           <div className="gold-bar" />
-          <h2 className="section-heading text-primary uppercase tracking-tighter mb-4">Our Service Portfolio</h2>
+          <h2 className="section-heading text-primary uppercase tracking-tighter mb-4">{services.title}</h2>
         </motion.div>
 
         <div className="space-y-0">
-          {services.map((s, i) => (
+          {services.items.map((s, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 24 }}

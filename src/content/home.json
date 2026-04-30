@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "title": "Empowering Talent, Strengthening Organisations.",
+    "description": "A professionally managed learning and human resource development organization dedicated to building industry-ready talent and strengthening organizational capability.",
+    "buttonText": "Explore Services",
+    "tickerText": "Talent Acquisition • Strategy Consulting • Corporate Training • Workforce Planning • Executive Search"
+  },
+  "testimonials": {
+    "title": "Client Success Stories",
+    "subtitle": "We take pride in building lasting relationships with our clients and delivering exceptional HR solutions.",
+    "list": [
+      {
+        "quote": "Triangle HR Solutions completely transformed our hiring process. Their team's understanding of our niche requirements was exceptional.",
+        "author": "Director of HR",
+        "company": "Leading Financial Institution",
+        "rating": 5
+      },
+      {
+        "quote": "The corporate training programs provided by Triangle HR were exactly what our middle management team needed taking their skills to the next level.",
+        "author": "Operations Manager",
+        "company": "Retail Enterprise",
+        "rating": 5
+      },
+      {
+        "quote": "We've been partnering with Triangle for over three years. Their payroll compliance services have given us total peace of mind.",
+        "author": "CEO",
+        "company": "Manufacturing Startup",
+        "rating": 5
+      }
+    ]
+  }
+}

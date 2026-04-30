@@ -3,8 +3,11 @@ import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 import bgImage from '../assets/bgimg.jpg';
+import homeContent from '../content/home.json';
 
 const HeroSection = () => {
+  const { hero } = homeContent;
+
   return (
     <section
       id="home"
@@ -35,9 +38,22 @@ const HeroSection = () => {
             className="text-white font-display leading-[1.1] tracking-tight max-w-4xl"
             style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)' }}
           >
-            Empowering <span className="font-light italic text-white/90">Talent,</span>
-            <br />
-            Strengthening <span className="font-light text-white/90 underline decoration-[#e25c68]/40 underline-offset-8">Organisations.</span>
+            {hero.title.split(',').map((part, index) => (
+              <span key={index}>
+                {index === 0 ? (
+                  <>
+                    {part}
+                  </>
+                ) : (
+                  <>
+                    <br />
+                    <span className="underline decoration-[#e25c68]/40 underline-offset-8">
+                      {part}
+                    </span>
+                  </>
+                )}
+              </span>
+            ))}
           </motion.h1>
 
           {/* Description (Centered) */}
@@ -47,7 +63,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="text-white/80 text-lg md:text-xl font-medium leading-[1.7] max-w-2xl"
           >
-            A professionally managed learning and human resource development organization dedicated to building industry-ready talent and strengthening organizational capability.
+            {hero.description}
           </motion.p>
         </div>
 
@@ -58,7 +74,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <Link to="/services" className="inline-flex bg-white border-2 border-white/10 text-[#01416d] px-12 py-5 font-black text-[11px] uppercase tracking-[0.2em] shadow-2xl hover:bg-[#e25c68] hover:text-white hover:scale-105 transition-all duration-300 rounded-full items-center gap-3 group">
-            Explore Services
+            {hero.buttonText}
             <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
           </Link>
         </motion.div>
@@ -71,8 +87,8 @@ const HeroSection = () => {
             transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
             className="flex gap-40 whitespace-nowrap text-[12px] font-black text-white uppercase tracking-[0.5em]"
          >
-            <span>Talent Acquisition • Strategy Consulting • Corporate Training • Workforce Planning • Executive Search</span>
-            <span>Talent Acquisition • Strategy Consulting • Corporate Training • Workforce Planning • Executive Search</span>
+            <span>{hero.tickerText}</span>
+            <span>{hero.tickerText}</span>
          </motion.div>
       </div>
 

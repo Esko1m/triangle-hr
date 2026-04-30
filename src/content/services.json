@@ -1,0 +1,55 @@
+{
+  "services": {
+    "title": "Our Service Portfolio",
+    "items": [
+      {
+        "number": "01",
+        "title": "Corporate Training & Capability Building",
+        "description": "We offer programs to help organizations build capable and high-performing teams through structured competency and behavioral frameworks.",
+        "image": "https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&q=80&w=400&h=400",
+        "highlights": [
+          "Leadership & Managerial Effectiveness",
+          "Power Skills & Behavioral Competencies",
+          "Communication & Workplace Collaboration",
+          "Emotional Intelligence & Wellbeing",
+          "Mental Wellbeing & Workplace Resilience"
+        ]
+      },
+      {
+        "number": "02",
+        "title": "Institutional Training & Employability Programs",
+        "description": "Bridging the gap between campus learning and corporate expectations through structured readiness programs.",
+        "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=400&h=400",
+        "highlights": [
+          "Campus-to-Corporate Programs",
+          "Employability Skill Development",
+          "Personality & Professional Development",
+          "Career Readiness Training"
+        ]
+      },
+      {
+        "number": "03",
+        "title": "Industry–Academia Initiatives",
+        "description": "Strengthening the connection between academic learning and industry expectations through collaborative programs.",
+        "image": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&q=80&w=400&h=400",
+        "highlights": [
+          "Industry Visits & Exposure Programs",
+          "Faculty Development Programs",
+          "Internship Training Programs",
+          "Skill Workshops & Seminars"
+        ]
+      },
+      {
+        "number": "04",
+        "title": "Individual Career Development",
+        "description": "Helping individuals gain clarity, build leadership capabilities, and navigate their career growth effectively.",
+        "image": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=400&h=400",
+        "highlights": [
+          "Career Guidance & Counseling",
+          "Leadership Coaching",
+          "Career Transition Support"
+        ]
+      }
+    ]
+  }
+}

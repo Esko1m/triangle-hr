@@ -1,0 +1,129 @@
+local_backend: true
+backend:
+  name: github
+  repo: Esko1m/triangle-hr
+  branch: main
+  base_url: https://decap-cms-oauth-gateway.vercel.app # Replace this with your proxy URL later
+  app_id: Ov23lijMhpiiO6u8aRkR
+
+media_folder: "public/assets"
+public_folder: "/assets"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "home"
+        label: "Homepage"
+        file: "src/content/home.json"
+        fields:
+          - { label: "Hero Section", name: "hero", widget: "object", fields: [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Description", name: "description", widget: "text" },
+              { label: "Button Text", name: "buttonText", widget: "string" },
+              { label: "Ticker Text", name: "tickerText", widget: "string" }
+            ]}
+          - { label: "Testimonials", name: "testimonials", widget: "object", fields: [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Subtitle", name: "subtitle", widget: "text" },
+              { label: "List", name: "list", widget: "list", fields: [
+                { label: "Quote", name: "quote", widget: "text" },
+                { label: "Author", name: "author", widget: "string" },
+                { label: "Company", name: "company", widget: "string" },
+                { label: "Rating", name: "rating", widget: "number", default: 5 }
+              ]}
+            ]}
+
+      - name: "about"
+        label: "About Us"
+        file: "src/content/about.json"
+        fields:
+          - { label: "About Section", name: "about", widget: "object", fields: [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Main Text", name: "mainText", widget: "text" },
+              { label: "Sub Text", name: "subText", widget: "text" },
+              { label: "Solutions Title", name: "solutionsTitle", widget: "string" },
+              { label: "Solutions List", name: "solutions", widget: "list", field: { label: "Item", widget: "string" } },
+              { label: "Stats", name: "stats", widget: "object", fields: [
+                { label: "Value (e.g. 10+)", name: "value", widget: "string" },
+                { label: "Title", name: "title", widget: "string" },
+                { label: "Subtitle", name: "subtitle", widget: "string" }
+              ]},
+              { label: "Strategic Framework", name: "framework", widget: "object", fields: [
+                { label: "Label", name: "label", widget: "string" },
+                { label: "Title", name: "title", widget: "string" },
+                { label: "Description", name: "text", widget: "text" }
+              ]},
+              { label: "Pillars", name: "pillars", widget: "list", fields: [
+                { label: "Title", name: "title", widget: "string" },
+                { label: "Text", name: "text", widget: "text" }
+              ]}
+            ]}
+
+      - name: "services"
+        label: "Services"
+        file: "src/content/services.json"
+        fields:
+          - { label: "Services Section", name: "services", widget: "object", fields: [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Items", name: "items", widget: "list", fields: [
+                { label: "Number", name: "number", widget: "string" },
+                { label: "Title", name: "title", widget: "string" },
+                { label: "Description", name: "text", widget: "text" },
+                { label: "Image URL", name: "image", widget: "image" },
+                { label: "Highlights", name: "highlights", widget: "list", field: { label: "Highlight", widget: "string" } }
+              ]}
+            ]}
+
+      - name: "training"
+        label: "Training Methodology"
+        file: "src/content/training.json"
+        fields:
+          - { label: "Training Section", name: "training", widget: "object", fields: [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Description", name: "text", widget: "text" },
+              { label: "Process", name: "process", widget: "object", fields: [
+                { label: "Title", name: "title", widget: "string" },
+                { label: "Description", name: "text", widget: "text" },
+                { label: "Steps", name: "steps", widget: "list", fields: [
+                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Description", name: "text", widget: "text" }
+                ]}
+              ]},
+              { label: "Experience", name: "experience", widget: "object", fields: [
+                { label: "Title", name: "title", widget: "string" },
+                { label: "Categories", name: "categories", widget: "list", fields: [
+                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Items", name: "items", widget: "list", field: { label: "Item", widget: "string" } }
+                ]}
+              ]},
+              { label: "Why Choose Us", name: "whyChooseUs", widget: "object", fields: [
+                { label: "Title", name: "title", widget: "string" },
+                { label: "Description", name: "text", widget: "text" },
+                { label: "Items", name: "items", widget: "list", field: { label: "Item", widget: "string" } }
+              ]}
+            ]}
+
+      - name: "impact"
+        label: "Social Impact"
+        file: "src/content/impact.json"
+        fields:
+          - { label: "Impact Section", name: "impact", widget: "object", fields: [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Description", name: "text", widget: "text" },
+              { label: "Sub Description", name: "subDescription", widget: "text" },
+              { label: "Focus Title", name: "focusTitle", widget: "string" },
+              { label: "Initiatives", name: "initiatives", widget: "list", field: { label: "Item", widget: "string" } }
+            ]}
+
+      - name: "contact"
+        label: "Contact"
+        file: "src/content/contact.json"
+        fields:
+          - { label: "Contact Section", name: "contact", widget: "object", fields: [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Description", name: "text", widget: "text" },
+              { label: "Email", name: "email", widget: "string" },
+              { label: "Location", name: "location", widget: "string" },
+              { label: "Form Title", name: "formTitle", widget: "string" }
+            ]}

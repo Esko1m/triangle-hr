@@ -1,8 +1,10 @@
 import { useState, FormEvent } from 'react';
 import { motion } from 'framer-motion';
 import { Phone, Mail, MapPin, Send, CheckCircle2, ArrowRight } from 'lucide-react';
+import contactContent from '../content/contact.json';
 
 const ContactSection = () => {
+  const { contact } = contactContent;
   const [formStatus, setFormStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -42,9 +44,9 @@ const ContactSection = () => {
               className="mb-12"
             >
               <div className="gold-bar" />
-              <h2 className="section-heading mb-6">Get in Touch</h2>
+              <h2 className="section-heading mb-6">{contact.title}</h2>
               <p className="text-xl text-muted-foreground font-medium leading-relaxed">
-                Let's discuss how we can help your organization build future-ready talent and capability. 
+                {contact.description}
               </p>
             </motion.div>
 
@@ -57,7 +59,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-sm font-black text-muted-foreground uppercase tracking-widest mb-1">Email</p>
-                  <p className="text-xl font-bold text-foreground">Info.trianglehrsolutions@gmail.com</p>
+                  <p className="text-xl font-bold text-foreground">{contact.email}</p>
                 </div>
               </div>
 
@@ -67,7 +69,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-sm font-black text-muted-foreground uppercase tracking-widest mb-1">Location</p>
-                  <p className="text-xl font-bold text-foreground">Bengaluru, Karnataka</p>
+                  <p className="text-xl font-bold text-foreground">{contact.location}</p>
                 </div>
               </div>
             </div>
@@ -93,7 +95,7 @@ const ContactSection = () => {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
-                  <h3 className="text-2xl font-bold text-foreground mb-8 font-display">Send a Message</h3>
+                  <h3 className="text-2xl font-bold text-foreground mb-8 font-display">{contact.formTitle}</h3>
                   
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-2">

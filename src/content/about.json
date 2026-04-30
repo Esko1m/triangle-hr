@@ -1,0 +1,37 @@
+{
+  "about": {
+    "title": "ABOUT US",
+    "mainText": "Triangle HR Solutions is a professionally managed learning and human resource development organization dedicated to building industry-ready talent and strengthening organizational capability.",
+    "subText": "With over a decade of experience, we design impactful training programs that help individuals and organizations build the skills, mindset, and capabilities needed for the future of work.",
+    "solutionsTitle": "Our solutions support:",
+    "solutions": [
+      "Students preparing for professional careers",
+      "Organizations building capable teams",
+      "Professionals enhancing leadership and employability skills"
+    ],
+    "stats": {
+      "value": "10+",
+      "title": "Years of Impact",
+      "subtitle": "Excellence in HR & Learning"
+    },
+    "framework": {
+      "label": "Strategic Framework",
+      "title": "How We Guide Growth",
+      "description": "Our vision, mission, and objectives are integrated to ensure every learner and organization reaches their full potential."
+    },
+    "pillars": [
+      {
+        "title": "Our Vision",
+        "text": "To be a trusted partner in shaping confident, skilled, and future-ready professionals who thrive in a changing world."
+      },
+      {
+        "title": "Our Mission",
+        "text": "To connect learning with real-world success by helping individuals grow with confidence and enabling organizations."
+      },
+      {
+        "title": "Our Objective",
+        "text": "Connecting learning with real-world impact by developing capable people, strong organizations, and future-ready careers."
+      }
+    ]
+  }
+}

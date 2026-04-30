@@ -1,0 +1,45 @@
+{
+  "training": {
+    "title": "Training Methodology",
+    "description": "A structured approach combining experiential learning, industry alignment, and continuous performance evaluation.",
+    "process": {
+      "title": "Our 5-Step Process",
+      "description": "We follow a rigorous methodology to ensure that every training program delivers measurable impact and sustainable results.",
+      "steps": [
+        { "title": "Understand", "description": "Assess organizational needs and skill gaps." },
+        { "title": "Customize", "description": "Design tailored programs aligned with business objectives." },
+        { "title": "Engage", "description": "Interactive learning through role plays and simulations." },
+        { "title": "Reflect", "description": "Participants analyze learning and develop action plans." },
+        { "title": "Apply", "description": "Practical implementation that drives performance improvement." }
+      ]
+    },
+    "experience": {
+      "title": "Training Experience & Tools",
+      "categories": [
+        {
+          "title": "Experiential Learning",
+          "items": ["Management Games", "Outbound Training Programs", "Business Simulations"]
+        },
+        {
+          "title": "Interactive Skill Building",
+          "items": ["Role Plays", "Group Activities", "Presentations"]
+        },
+        {
+          "title": "Career Preparation",
+          "items": ["Mock Interviews", "Group Discussion Training", "Industry-Specific Interview Preparation"]
+        }
+      ]
+    },
+    "whyChooseUs": {
+      "title": "Why Organizations Choose Our Approach.",
+      "description": "We bridge the gap between academic theory and industry reality through precision-engineered training programs.",
+      "items": [
+        "Industry-aligned training programs",
+        "Experiential learning methodology",
+        "Strong academia-industry connection",
+        "Leadership and behavioral capability development",
+        "Placement mentoring and career readiness support"
+      ]
+    }
+  }
+}
