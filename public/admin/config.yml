@@ -43,7 +43,7 @@ collections:
               { label: "Main Text", name: "mainText", widget: "text" },
               { label: "Sub Text", name: "subText", widget: "text" },
               { label: "Solutions Title", name: "solutionsTitle", widget: "string" },
-              { label: "Solutions List", name: "solutions", widget: "list", field: { label: "Item", widget: "string" } },
+              { label: "Solutions List", name: "solutions", widget: "list", field: { label: "Item", name: "item", widget: "string" } },
               { label: "Stats", name: "stats", widget: "object", fields: [
                 { label: "Value (e.g. 10+)", name: "value", widget: "string" },
                 { label: "Title", name: "title", widget: "string" },
@@ -52,7 +52,7 @@ collections:
               { label: "Strategic Framework", name: "framework", widget: "object", fields: [
                 { label: "Label", name: "label", widget: "string" },
                 { label: "Title", name: "title", widget: "string" },
-                { label: "Description", name: "text", widget: "text" }
+                { label: "Description", name: "description", widget: "text" }
               ]},
               { label: "Pillars", name: "pillars", widget: "list", fields: [
                 { label: "Title", name: "title", widget: "string" },
@@ -69,9 +69,9 @@ collections:
               { label: "Items", name: "items", widget: "list", fields: [
                 { label: "Number", name: "number", widget: "string" },
                 { label: "Title", name: "title", widget: "string" },
-                { label: "Description", name: "text", widget: "text" },
+                { label: "Description", name: "description", widget: "text" },
                 { label: "Image URL", name: "image", widget: "image" },
-                { label: "Highlights", name: "highlights", widget: "list", field: { label: "Highlight", widget: "string" } }
+                { label: "Highlights", name: "highlights", widget: "list", field: { label: "Highlight", name: "item", widget: "string" } }
               ]}
             ]}
 
@@ -81,26 +81,26 @@ collections:
         fields:
           - { label: "Training Section", name: "training", widget: "object", fields: [
               { label: "Title", name: "title", widget: "string" },
-              { label: "Description", name: "text", widget: "text" },
+              { label: "Description", name: "description", widget: "text" },
               { label: "Process", name: "process", widget: "object", fields: [
                 { label: "Title", name: "title", widget: "string" },
-                { label: "Description", name: "text", widget: "text" },
+                { label: "Description", name: "description", widget: "text" },
                 { label: "Steps", name: "steps", widget: "list", fields: [
                   { label: "Title", name: "title", widget: "string" },
-                  { label: "Description", name: "text", widget: "text" }
+                  { label: "Description", name: "description", widget: "text" }
                 ]}
               ]},
               { label: "Experience", name: "experience", widget: "object", fields: [
                 { label: "Title", name: "title", widget: "string" },
                 { label: "Categories", name: "categories", widget: "list", fields: [
                   { label: "Title", name: "title", widget: "string" },
-                  { label: "Items", name: "items", widget: "list", field: { label: "Item", widget: "string" } }
+                  { label: "Items", name: "items", widget: "list", field: { label: "Item", name: "item", widget: "string" } }
                 ]}
               ]},
               { label: "Why Choose Us", name: "whyChooseUs", widget: "object", fields: [
                 { label: "Title", name: "title", widget: "string" },
-                { label: "Description", name: "text", widget: "text" },
-                { label: "Items", name: "items", widget: "list", field: { label: "Item", widget: "string" } }
+                { label: "Description", name: "description", widget: "text" },
+                { label: "Items", name: "items", widget: "list", field: { label: "Item", name: "item", widget: "string" } }
               ]}
             ]}
 
@@ -110,10 +110,10 @@ collections:
         fields:
           - { label: "Impact Section", name: "impact", widget: "object", fields: [
               { label: "Title", name: "title", widget: "string" },
-              { label: "Description", name: "text", widget: "text" },
+              { label: "Description", name: "description", widget: "text" },
               { label: "Sub Description", name: "subDescription", widget: "text" },
               { label: "Focus Title", name: "focusTitle", widget: "string" },
-              { label: "Initiatives", name: "initiatives", widget: "list", field: { label: "Item", widget: "string" } }
+              { label: "Initiatives", name: "initiatives", widget: "list", field: { label: "Item", name: "item", widget: "string" } }
             ]}
 
       - name: "contact"
@@ -122,7 +122,7 @@ collections:
         fields:
           - { label: "Contact Section", name: "contact", widget: "object", fields: [
               { label: "Title", name: "title", widget: "string" },
-              { label: "Description", name: "text", widget: "text" },
+              { label: "Description", name: "description", widget: "text" },
               { label: "Email", name: "email", widget: "string" },
               { label: "Location", name: "location", widget: "string" },
               { label: "Form Title", name: "formTitle", widget: "string" }
