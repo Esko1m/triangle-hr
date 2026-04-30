@@ -99,7 +99,7 @@ const SiteFooter = () => {
                Associated with <span className="text-slate-700">NAMANAM CENTRE</span>
              </span>
              <Link to="/privacy" className="text-slate-400 text-[10px] uppercase font-bold tracking-widest hover:text-slate-900 transition-colors">Privacy</Link>
-             <a href="/admin/" className="text-slate-300 text-[10px] uppercase font-bold tracking-widest hover:text-primary transition-colors ml-4">Admin Login</a>
+             <Link to="/admin-portal" className="text-slate-300 text-[10px] uppercase font-bold tracking-widest hover:text-primary transition-colors ml-4">Admin Login</Link>
           </div>
         </div>
       </div>

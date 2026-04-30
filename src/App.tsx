@@ -11,6 +11,7 @@ import Training from "./pages/Training";
 import Impact from "./pages/Impact";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import AdminDashboard from "./pages/AdminDashboard";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/impact" element={<Impact />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/workshops" element={<Workshops />} />
+          <Route path="/admin-portal" element={<AdminDashboard />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
