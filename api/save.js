@@ -6,7 +6,7 @@ export default async function handler(req, res) {
   const { path, content, password } = req.body;
   const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
   const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'Triangle2026'; // You can change this in Vercel
-  const REPO_OWNER = 'Esko1m';
+  const REPO_OWNER = 'FreeED1620';
   const REPO_NAME = 'triangle-hr';
 
   // 1. Simple Security Check
